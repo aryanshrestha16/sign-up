@@ -5,21 +5,19 @@
 }
 
 html {
-    background-color: antiquewhite;
     font-family: 'Merriweather',sans-serif;
 }
 
 .container {
     display: flex;
     flex-direction: row;
-    gap: 20px;
-    
+    height: 100vh;
 }
 
 .image-sidebar {
-    height: 100vh;
-    min-width: 400px;
-    width: 40%;
+    height: 100%;
+    min-width: 30%;
+    min-height: 50%;
     position: relative;
     background-image: url("/scooter.jpg");
     background-size: cover;
@@ -37,11 +35,99 @@ html {
     background-color: rgba(0, 0, 0, 0.382);
 }
 
-a {
+.credits a {
     text-decoration: none;
     color: antiquewhite;
 }
 
 a:hover {
     color: blue;
+}
+
+
+.content {
+    font-size: 1.2rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.first-bar {
+    padding-top: 40px;
+    padding-bottom: 10px;
+    background-color: white;
+    min-height: 250px;
+}
+
+.first-bar > p {
+    padding: 30px;
+    margin: 20px;
+}
+
+.second-bar{
+    padding: 30px;
+    height: 40%;
+    background-color: antiquewhite;
+    box-shadow: 10px 10px 5px 5px rgba(0, 0, 0, 0.083);
+}
+
+form {
+    padding: 20px;
+    font-size: 14px;
+    color: rgba(0, 0, 0, 0.615);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+
+}
+form label {
+    text-transform: uppercase;
+    margin: 5px;
+}
+#formcaption{
+    padding: 20px;
+}
+input {
+    margin: 5px;
+    width: 250px;
+    height: 30px;
+    border-radius: 5px;
+    border: 2px white solid;
+}
+
+.third-bar {
+    background-color: white;
+    height: 30%;
+    padding: 20px;
+    margin-left: 20px;
+    font-size: 16px;
+}
+
+.form-left {
+    margin-right: 200px;
+}
+
+#submit {
+    margin-left: 40px;
+    margin-top: 30px;
+    margin-bottom: 0px;
+    border-radius: 30px;
+    height: 100px;
+    font-size: 16px;
+    background-color: antiquewhite;
+    color: grey;
+}
+#submit:hover{
+    color: white;
+    background-color: rgba(128, 128, 128, 0.507);
+}
+
+.third-bar a {
+    color: blue;
+
+}
+
+.third-bar a:hover {
+    cursor: pointer;
 }
