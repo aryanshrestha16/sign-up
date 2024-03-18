@@ -19,7 +19,7 @@ html {
     min-width: 30%;
     min-height: 50%;
     position: relative;
-    background-image: url("/scooter.jpg");
+    background-image: url("scooter.jpg");
     background-size: cover;
 }
 
