@@ -65,7 +65,7 @@ a:hover {
 
 .second-bar{
     padding: 30px;
-    height: 40%;
+    min-height: 45%;
     background-color: antiquewhite;
     box-shadow: 10px 10px 5px 5px rgba(0, 0, 0, 0.083);
 }
@@ -77,8 +77,7 @@ form {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    flex-wrap: wrap;
-
+    flex-wrap: nowrap;
 
 }
 form label {
@@ -130,4 +129,10 @@ input {
 
 .third-bar a:hover {
     cursor: pointer;
+}
+
+.error, .lengtherror {
+    display: inline-block;
+    margin-left: 10px;
+    color: red;
 }
